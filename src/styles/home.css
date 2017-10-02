@@ -1,0 +1,32 @@
+.card {
+    border-radius: 2px !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.presentation {
+    max-width: 320px;
+}
+
+.card-header-img {
+    height: 120px;
+}
+
+.profile-picture{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -60px;
+    margin-bottom: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.console {
+    width: 100%;
+}
