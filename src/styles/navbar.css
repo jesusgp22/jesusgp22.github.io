@@ -1,0 +1,34 @@
+header {
+    margin: 10px 0px 20px 0px;
+}
+
+.navbar-center {
+    margin: 0 auto;
+}
+
+.navbar-center > ul.navbar-nav.mr-auto > li > a {
+    color: #212529;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar-center {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar-center > ul.navbar-nav.lr-auto > li> a {
+    color: #212529;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar-center > ul.navbar-nav.lr-auto > li> a:hover {
+    color: #28a745;
+    
+}
+
+.navbar-center > ul.navbar-nav.lr-auto > li.active > a {
+    color: #007bff;
+}
+
