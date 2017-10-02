@@ -10,6 +10,7 @@
 
 .presentation {
     max-width: 320px;
+    margin: 0px auto 20px auto;
 }
 
 .presentation-footer .card-text {
