@@ -7,7 +7,7 @@ import profile from './../images/profile.jpg'
 export const Home = () => [
     <section className="main-section container">
         <div className="row">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-3">
                 <div className="card presentation">
                     <img className="card-img-top card-header-img" src={placeholder} alt="Card image cap" />
                     <img className="profile-picture rounded-circle" src={profile} alt="Profile picture" />
@@ -57,7 +57,7 @@ export const Home = () => [
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-9">
                 <div className="card console">
                     <textarea></textarea>
                 </div>
