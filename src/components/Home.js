@@ -4,13 +4,21 @@ import './../styles/home.css';
 import placeholder from './../images/header.jpg'
 import profile from './../images/profile.jpg'
 
+const ascii = [
+"    __        __   _                          _ ",
+"    \\ \\      / /__| | ___ ___  _ __ ___   ___| |",
+"     \\ \\ /\\ / / _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\ |",
+"      \\ V  V /  __/ | (_| (_) | | | | | |  __/_|",
+"       \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___(_)",
+]
+
 export const Home = () => [
     <section className="main-section container">
         <div className="row">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-3">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
                 <div className="card presentation">
-                    <img className="card-img-top card-header-img" src={placeholder} alt="Card image cap" />
-                    <img className="profile-picture rounded-circle" src={profile} alt="Profile picture" />
+                    <img className="card-img-top card-header-img" src={placeholder} alt="Jesus Gomez header" />
+                    <img className="profile-picture rounded-circle" src={profile} alt="Jesus Gomez profile" />
                     <div className="card-body text-center">
                         <h4 className="card-title">Jesús A. Gómez P.</h4>
                         <h5 className="card-text"><i className="fa fa-terminal"></i> Software Engineer</h5>
@@ -57,9 +65,40 @@ export const Home = () => [
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-9">
+            <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8">
                 <div className="card console">
-                    <textarea></textarea>
+                    <div className="console-app-bar">
+                        <i className="fa fa-terminal"></i>
+                        {' '}
+                        Command Prompt
+                        <div className="pull-right console-app-bar--actions">
+                            <i className="fa fa-minus action"></i>
+                            {" "}
+                            <i className="fa fa-window-maximize action"></i>
+                            {" "}
+                            <i className="fa fa-times action"></i>
+                        </div>
+                    </div>
+                    <div className="console-content">
+                        <pre contentEditable autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                            <p className="comment">
+                            /___________________________________________________/<br/>
+                            {
+                                ascii.join("\n") + '\n'
+                            }
+                            /___________________________________________________/<br/>
+                            Hello! My name is Jesús, I'm a <span className="emphasis">software engineer</span> and <span className="emphasis">full stack developer</span>
+                            <br/>
+                            I have four years of experience in design, development, and deployment of computer systems and web applications.
+                            <br/>
+                            I love learning new technologies, building interactive experiences and designing architectures for applications big or small!<br/>
+                            
+                            </p>
+                            <p>
+                            jesus@browser:/$
+                            </p>
+                        </pre>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,10 +106,10 @@ export const Home = () => [
 
 
     </section>,
-    <section className="about-me">
+    <section className="container about-me">
         <p>About me</p>
     </section>,
-    <section className="contact">
+    <section className="container contact">
         <p>Contact me</p>
     </section>
 ]

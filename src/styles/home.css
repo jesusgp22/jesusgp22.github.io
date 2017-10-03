@@ -1,3 +1,8 @@
+.main-section {
+    height: 100vh;
+    min-height: 100vh;
+}
+
 .card {
     border-radius: 2px !important;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -38,5 +43,50 @@
 
 .console {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3) !important;
+}
+
+.console-app-bar {
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    line-height: 35px;
+    padding: 0px 10px 0px 10px;
+    background: #ededed !important;
+    font-weight: bold;
+}
+
+.console-app-bar--actions > .action {
+    padding: 0px 10px 0px 10px;
+}
+
+.console-app-bar--actions.action {
+    padding: 0px 10px 0px 10px;   
+}
+
+.console-content {
+    height: 100%;
+}
+
+.console-content pre {
+    height: 100%;
+    padding: 10px 10px 20px;
+    color: white;
+    background: rgb(48, 48, 48);
+    min-height: 100%;
+    font-family: monospace;
+    overflow: auto;
+    font-size: 14px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    outline: 0;
+}
+
+.comment {
+    color: #90b890;
+}
+
+.emphasis {
+    color: #70c017;
 }
